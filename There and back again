@@ -1,0 +1,7 @@
+Доля товара в групі = 
+var A = SUM('Лист1'[Продажі, грн])
+var B = CALCULATE(SUM('Лист1'[Продажі, грн]), ALL('Лист1'[Товар]))
+
+return
+
+IF(HASONEVALUE('Лист1'[Категорія]) && HASONEVALUE('Лист1'[Група]), DIVIDE(A,B), BLANK())
