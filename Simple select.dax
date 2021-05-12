@@ -1,7 +1,0 @@
-﻿FILTER = FILTER(
-    'TABLE_FACT',
-    AND(
-        'TABLE_FACT'[source_system_code] = "Poltava",
-        'TABLE_FACT'[load_district_name] = "ХАРКІВСЬКА"
-    )
-)
